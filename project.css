@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: bisque;
+    padding: 15px 100px;
+    gap: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: brown;
+    text-decoration: none;
+    transition: 2s;
+
+}
+
+header nav a:hover {
+    color: black;
+    font-size: 22px;
+
+
+}  
+
+
+.product{
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.splide{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.product button{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.product button:hover{
+    color: black;
+    scale: 1.3;
+}
+
+.intro {
+    height: 90vh;
+    background-color: red;
+    color: white;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    justify-content: center;
+}
+
+.intro.content {
+    width: 50%;
+}
+
+.intro .content h1 {
+    margin: 15px 0;
+    font-size: 50px
+}
+
+
+
+
+.intro .content button {
+    background-color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}  
+
+.intro button {
+    color: brown;
+    text-decoration: none;
+    transition: 2s;
+
+}
+
+.intro button:hover{
+    color: black;
+    font-size: 22px;
+
+}
+
+.menu{
+    font-size: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+
+.parents{
+    width: 90%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    background-color: white
+}
+
+.parents p{
+    font-size: 15px;
+}
+
+.parents h1{
+    color: black;
+}
+
+
+
+
+.pizza{
+    width: 480px;
+    padding: 20px;
+    display: flex;  
+    background-color: white
+    
+    
+}
+
+.pizza button {
+    padding: 12px 24px;
+      color: black;
+      border: none;
+      cursor: pointer;
+      position: relative;
+    transition: 0.5s;
+
+}
+
+.pizza button:hover {
+    background-color: black;
+    color: white;
+    scale: 2s;
+    cursor: pointer;    
+
+
+}
+
+.mobile{
+    height: 90vh;
+    background-color: black;
+    color: white;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    padding: 10 150px;
+    justify-content: center;
+    gap: 65px;
+}
+
+.mobile.app{
+    width: 50%;
+}
+
+.mobile button{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.mobile button:hover{
+    color: black;
+    font-size: 22px;
+}
+
+.myform{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+@media(max-width: 1280px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro img{
+        width: 90%;
+    }
+    
+    .mobile{
+        flex-direction: column;
+    }
+
+    .mobile img{
+        width: 90%;
+    }
+
+
+
+}
+
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .parents {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .intro{
+        padding: 0 50px;
+    }
+}
+
+
+
+
+@media(max-width: 480px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .pizza{
+        flex-direction: column;
+    }
+}
